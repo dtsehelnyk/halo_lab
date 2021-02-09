@@ -1,0 +1,73 @@
+@mixin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 10px 5px;
+  height: 56px;
+  width: 64px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: $green;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  outline: none;
+
+  &:hover {
+    background-color: $green;
+    border-color: $green;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: $light-green;
+    border-color: $light-green;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px 3px $green;
+  }
+}
+
+@mixin green-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 10px 5px;
+  height: 56px;
+  width: 64px;
+  border-radius: 16px;
+  background-color: $green;
+  border-color: $green;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  outline: none;
+
+  &:hover {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: $green;
+  }
+
+  &:active {
+    background-color: $light-green;
+    border-color: $light-green;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px 3px $green;
+  }
+}

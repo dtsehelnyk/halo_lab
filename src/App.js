@@ -1,11 +1,16 @@
+import React from 'react';
+
 import './App.scss';
-import './styles/reset.scss';
+import './styles/utils.scss';
+import { Cards } from './components/Cards/Cards';
+import { BuyCheepest } from './components/BuyCheepest/BuyCheepest';
 
 function App() {
   return (
-    <div className="App">
-      <h1 style={{fontSize: 140 + "px"}}>it works</h1>
-    </div>
+    <main className="App">
+      <Cards />
+      <BuyCheepest />
+    </main>
   );
 }
 
