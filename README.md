@@ -1,4 +1,4 @@
-# [Demo link](https://<name>.github.io/<app_name>)
+# [Demo link](https://dtsehelnyk.github.io/halo_lab)
 
 Also you should change homepage property in package.json file.
 
