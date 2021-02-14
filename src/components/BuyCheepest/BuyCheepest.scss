@@ -1,0 +1,8 @@
+@import "../../styles/utils";
+
+.BuyCheepest {
+  @include green-button;
+  margin:  0 auto;
+  width: 235px;
+  height: 60px;
+}

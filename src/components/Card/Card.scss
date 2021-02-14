@@ -1,0 +1,62 @@
+@import "../../styles/utils";
+
+.Card {
+  padding: 32px;
+  border-radius: 24px;
+  background-color: #fff;
+
+  &__category {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__additional {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  }
+
+  &__currency {
+    margin-right: 4px;
+    padding-top: 10px;
+  }
+
+  &__price-value {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  &__button {
+    @include button;
+    width: 64px;
+  }
+}
+

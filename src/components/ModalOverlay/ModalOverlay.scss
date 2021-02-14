@@ -1,0 +1,109 @@
+@import "../../styles/utils";
+
+.ModalOverlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000, $alpha: 0.8);
+
+  &__content {
+    position: relative;
+    padding: 54px 48px 56px;
+    width: 100%;
+    max-width: 384px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+  }
+
+  &__close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../../img/close.svg");
+    outline: none;
+    border-radius: 50%;
+    transition: opacity 0.3s, box-shadow 0.3s;
+
+    &:focus {
+      box-shadow: 0 0 3px 3px $green;
+      border-color: $green;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__category {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #000;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  }
+
+  &__currency {
+    padding-top: 10px;
+  }
+
+  &__value {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media(max-width: 480px) {
+  .ModalOverlay {
+    
+    &__content {
+      padding: 40px 30px;
+    }
+
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+  }
+}

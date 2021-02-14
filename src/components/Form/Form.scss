@@ -1,0 +1,11 @@
+@import "../../styles/utils";
+
+.Form {
+
+  &__button {
+    margin-top: 16px;
+    display: block;
+    width: 100%;
+    @include green-button;
+  }
+}
