@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/halo_lab/static/css/main.33f7019d.chunk.css",
+    "main.css": "/halo_lab/static/css/main.26d3bcc1.chunk.css",
     "main.js": "/halo_lab/static/js/main.580300f2.chunk.js",
     "main.js.map": "/halo_lab/static/js/main.580300f2.chunk.js.map",
     "runtime-main.js": "/halo_lab/static/js/runtime-main.afc769f1.js",
@@ -10,7 +10,7 @@
     "static/js/3.5e4913d3.chunk.js": "/halo_lab/static/js/3.5e4913d3.chunk.js",
     "static/js/3.5e4913d3.chunk.js.map": "/halo_lab/static/js/3.5e4913d3.chunk.js.map",
     "index.html": "/halo_lab/index.html",
-    "static/css/main.33f7019d.chunk.css.map": "/halo_lab/static/css/main.33f7019d.chunk.css.map",
+    "static/css/main.26d3bcc1.chunk.css.map": "/halo_lab/static/css/main.26d3bcc1.chunk.css.map",
     "static/js/2.2ed2ef92.chunk.js.LICENSE.txt": "/halo_lab/static/js/2.2ed2ef92.chunk.js.LICENSE.txt",
     "static/media/arrow-right.2859eaf0.svg": "/halo_lab/static/media/arrow-right.2859eaf0.svg",
     "static/media/ModalOverlay.scss": "/halo_lab/static/media/close.0ef14903.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.afc769f1.js",
     "static/js/2.2ed2ef92.chunk.js",
-    "static/css/main.33f7019d.chunk.css",
+    "static/css/main.26d3bcc1.chunk.css",
     "static/js/main.580300f2.chunk.js"
   ]
 }
