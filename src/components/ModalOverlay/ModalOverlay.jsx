@@ -1,32 +1,30 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './ModalOverlay.scss';
 
 import { Form } from '../Form/Form';
-import { ModalContext } from '../../ModalContext';
 
-export const ModalOverlay = () => {
-  const { toggleModal } = useContext(ModalContext);
+export const ModalOverlay = ({ modal, closeModal }) => {
 
   return (
     <div className="ModalOverlay">
       <div className="ModalOverlay__content">
         <button
           className="ModalOverlay__close"
-          onClick={toggleModal}
+          onClick={() => closeModal()}
         ></button>
 
         <h3 className="ModalOverlay__category">
-          category
+          {modal.category}
         </h3>
           
         <h2 className="ModalOverlay__name">
-          product
+          {modal.name}
         </h2>
 
         <p className="ModalOverlay__price">
           <span className="ModalOverlay__currency">$</span>
           <strong className="ModalOverlay__value">
-            1000
+            {modal.price}
           </strong>
         </p>
 

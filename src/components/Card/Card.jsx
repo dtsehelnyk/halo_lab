@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Card.scss';
 
-import { ModalContext } from '../../ModalContext';
-
-export const Card = ({ product, id }) => {
-  const { toggleModal } = useContext(ModalContext);
-
+export const Card = ({ product, openModal }) => {
   const { category, name, price } = product;
+
+  console.log('card render');
 
   return (
     <div className="Card">
@@ -24,7 +22,7 @@ export const Card = ({ product, id }) => {
         </p>
         <button
           className="Card__button"
-          onClick={toggleModal}
+          onClick={() => openModal(product)}
         >
           Buy
         </button>

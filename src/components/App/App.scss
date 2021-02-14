@@ -4,3 +4,9 @@
   max-width: 1180px;
   min-height: 100vh;
 }
+
+@media(max-width: 400px) {
+  .App {
+    padding: 20px 10px;
+  }
+}
